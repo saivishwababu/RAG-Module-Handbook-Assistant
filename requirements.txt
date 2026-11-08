@@ -1,4 +1,19 @@
-pdfplumber>=0.9.0
-chromadb>=0.3.21
-sentence-transformers>=2.2.0
+# Core RAG dependencies
+pdfplumber>=0.11.0
+chromadb>=1.5.0
+sentence-transformers>=3.0.0
 requests>=2.31.0
+rank-bm25>=0.2.2
+python-dotenv>=1.0.0
+rich>=13.7.0
+
+# Research, Benchmarking & Testing
+pytest>=8.0.0
+scikit-learn>=1.4.0
+torch>=2.2.0
+transformers>=4.40.0
+
+# Platform-specific compatibility constraint:
+# Scipy 1.13.1 avoids macOS Mach-O thread_bss zero-fill linker errors on macOS
+scipy==1.13.1; sys_platform == 'darwin'
+scipy>=1.13.0; sys_platform != 'darwin'

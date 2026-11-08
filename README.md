@@ -61,7 +61,7 @@ This step is **only required if you are adding new PDFs**.
 The existing `chroma_db` already contains indexed data for previously ingested PDFs.
 
 ```bash
-python rag.py ingest data/dsai.pdf
+python rag.py ingest data/visual_computing.pdf
 ```
 
 ### 6. Start Chatting!
@@ -121,7 +121,7 @@ Instead of asking an LLM to generate answers from its training data (which may b
 │  │  └─ Storage (ChromaDB)                               │   │
 │  └──────────────────────────────────────────────────────┘   │
 │         ↓                                                   │
-│  ┌──────────────────────────────────────────────────────┐   │ 
+│  ┌──────────────────────────────────────────────────────┐   │
 │  │  Vector Database (ChromaDB)                          │   │
 │  │  - 456 chunks from handbook                          │   │
 │  │  - Cosine similarity search                          │   │
@@ -301,4 +301,3 @@ python rag.py status
 | Very specific queries | May return generic chunks | Rephrase question more broadly |
 
 ---
-

@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Which modules cover cryptography?",
+    "expected_sources": [
+      "entrepreneurial-cybersecurity.pdf",
+      "medieninformatik.pdf",
+      "mathematics-and-computer-science.pdf"
+    ]
+  },
+  {
+    "question": "What prerequisites are listed for Algorithms and Data Structures?",
+    "expected_sources": ["informatik.pdf"]
+  },
+  {
+    "question": "Which modules cover machine learning?",
+    "expected_sources": [
+      "informatik.pdf",
+      "mathematics-and-computer-science.pdf",
+      "visual_computing.pdf"
+    ]
+  }
+]
